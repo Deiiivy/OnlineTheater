@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnlineTheater")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69674c2853bcff4b6534b42e4ea4f1d81e38a782")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnlineTheater")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnlineTheater")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

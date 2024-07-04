@@ -18,6 +18,9 @@ builder.Services.AddDbContext<Model>(options =>
     options.UseSqlServer(configuration.GetConnectionString("SQLConexion"));
 });
 builder.Services.AddTransient<CustomerService>();
+builder.Services.AddTransient<MovieService>();
+
+
 
 var app = builder.Build();
 
