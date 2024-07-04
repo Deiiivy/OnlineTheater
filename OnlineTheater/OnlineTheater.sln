@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineTheater", "OnlineTheater\OnlineTheater.csproj", "{B29C9586-43C1-4E69-8898-143D991F979B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B29C9586-43C1-4E69-8898-143D991F979B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29C9586-43C1-4E69-8898-143D991F979B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29C9586-43C1-4E69-8898-143D991F979B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29C9586-43C1-4E69-8898-143D991F979B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
