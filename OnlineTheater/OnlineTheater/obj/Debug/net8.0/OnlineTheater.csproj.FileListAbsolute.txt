@@ -77,3 +77,4 @@ C:\Users\deivy\Downloads\OnlineTheater\OnlineTheater\OnlineTheater\obj\Debug\net
 C:\Users\deivy\Downloads\OnlineTheater\OnlineTheater\OnlineTheater\obj\Debug\net8.0\OnlineTheater.pdb
 C:\Users\deivy\Downloads\OnlineTheater\OnlineTheater\OnlineTheater\obj\Debug\net8.0\OnlineTheater.genruntimeconfig.cache
 C:\Users\deivy\Downloads\OnlineTheater\OnlineTheater\OnlineTheater\obj\Debug\net8.0\ref\OnlineTheater.dll
+C:\Users\deivy\Downloads\OnlineTheater\OnlineTheater\OnlineTheater\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
