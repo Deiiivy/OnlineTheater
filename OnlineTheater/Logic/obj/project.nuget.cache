@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aG0mBik+TVA=",
+  "dgSpecHash": "BfodOOFrKQFZ3HYXFrNr6xrIjmDL3dNWsZnSTdHBug0KjO/cQhCdhHx7bVrnH9WkmGF0l1oituwWwfM69/RwOw==",
   "success": true,
   "projectFilePath": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Logic.csproj",
   "expectedPackageFiles": [
@@ -68,10 +68,7 @@
     "C:\\Users\\deivy\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\deivy\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\deivy\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\deivy\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\deivy\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\deivy\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\deivy\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
+    "C:\\Users\\deivy\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Logic.DAL;
 using Logic.Entities;
+using System.Threading.Tasks;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using System;
 using Logic.Services;
 
 namespace OnlineTheater.Controllers
@@ -9,97 +13,64 @@ namespace OnlineTheater.Controllers
     [ApiController]
     public class MoviesController : Controller
     {
-
         private readonly Model _context;
-        private readonly MovieService _movieService;
 
-        public MoviesController(Model context, MovieService movieService)
+
+
+        public MoviesController(Model context)
         {
             _context = context;
-            _movieService = movieService;
         }
 
+     
 
-        [HttpGet]
-        [Route("{id}")]
-        public async Task <IActionResult> Get(int id)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
         {
             var movie = await _context.Movies.FindAsync(id);
-            if (movie == null)
+            if (movie == null || !movie.IsActive)
             {
                 return NotFound();
             }
 
-            return Json(movie);
+            return Ok(movie);
         }
 
         [HttpGet]
-
-        public async Task <IActionResult> GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            var movies = _context.Movies.ToList();
+            var movies = await _context.Movies
+                .Where(m => m.IsActive)
+                .ToListAsync();
 
-            return Json(movies);
+            return Ok(movies);
         }
 
         [HttpPost]
-
-        public async Task <IActionResult> Create(Movie movie)
+        public async Task<IActionResult> Create([FromBody] Movie movie)
         {
             try
             {
                 if (!ModelState.IsValid)
                 {
-                    return BadRequest();
+                    return BadRequest(ModelState);
                 }
 
-                if(string.IsNullOrEmpty(movie.Name) || movie.LicensingModel == null)
-                {
-                    return StatusCode(400, "los campos no pueden estar vacios");   
-                }
 
-                movie.Id = 0;
+
                 _context.Movies.Add(movie);
                 await _context.SaveChangesAsync();
 
                 return Ok(movie);
-
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
-                return StatusCode(500, new { error = ex.Message });
+                return StatusCode(500, "error al crear película: " + ex.Message);
             }
         }
 
-
-        [HttpPut]
-        [Route("{id}")]
-
-        public async Task <IActionResult> Update(Movie Movie, int id)
-        {
-
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var movie =  await _context.Movies.FindAsync(id);
-            if(movie == null)
-            {
-              
-                return NotFound();
-            }
-
-            movie.Name = Movie.Name;
-            movie.LicensingModel = Movie.LicensingModel;
-            _context.SaveChanges();
-
-            return Ok();
-        }
-
-
-        [HttpDelete]
-        [Route("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, Movie Movie)
         {
             if (!ModelState.IsValid)
             {
@@ -107,17 +78,37 @@ namespace OnlineTheater.Controllers
             }
 
             var movie = await _context.Movies.FindAsync(id);
-
-
             if (movie == null)
             {
                 return NotFound();
             }
 
-            _context.Movies.Remove(movie);
+            movie.Name = Movie.Name;
+            movie.Description = Movie.Description;
+            movie.Rating = Movie.Rating;
+            movie.Category = Movie.Category;
+            movie.IsActive = Movie.IsActive;
+            movie.LicensingModel = Movie.LicensingModel;
+
             await _context.SaveChangesAsync();
 
-            return Ok($"id de pelicula eliminada: {id}"); 
+            return NoContent();
+        }
+
+        [HttpPatch("{id}/inactivate")]
+        public async Task<IActionResult> Inactivate(int id)
+        {
+            var movie = await _context.Movies.FindAsync(id);
+            if (movie == null)
+            {
+                return NotFound();
+            }
+
+            movie.IsActive = false;
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = $"pelicula con id {id} inactivada" });
         }
     }
 }
+

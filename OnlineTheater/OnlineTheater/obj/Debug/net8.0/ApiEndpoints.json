@@ -150,13 +150,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Movie",
-        "Type": "Logic.Entities.Movie",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "id",
-        "Type": "System.Int32",
+        "Name": "Movie",
+        "Type": "Logic.Entities.Movie",
         "IsRequired": true
       }
     ],
@@ -164,9 +164,9 @@
   },
   {
     "ContainingType": "OnlineTheater.Controllers.MoviesController",
-    "Method": "Delete",
-    "RelativePath": "api/Movies/{id}",
-    "HttpMethod": "DELETE",
+    "Method": "Inactivate",
+    "RelativePath": "api/Movies/{id}/inactivate",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
