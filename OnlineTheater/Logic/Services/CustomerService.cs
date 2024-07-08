@@ -16,7 +16,7 @@ namespace Logic.Services
             _movieService = movieService;
         }
 
-        private decimal CalculatePrice(CustomerStatus status, DateTime? statusExpirationDate, LicensingModel licensingModel)
+        public decimal CalculatePrice(CustomerStatus status, DateTime? statusExpirationDate, LicensingModel licensingModel)
         {
             decimal price;
             switch (licensingModel)

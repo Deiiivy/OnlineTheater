@@ -12,12 +12,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(a =>
+{
+    a.EnableAnnotations();
+});
 builder.Services.AddDbContext<Model>(options =>
 {
     options.UseSqlServer(configuration.GetConnectionString("SQLConexion"));
 });
 builder.Services.AddTransient<CustomerService>();
+builder.Services.AddTransient<MovieService>();
+
+
 
 var app = builder.Build();
 

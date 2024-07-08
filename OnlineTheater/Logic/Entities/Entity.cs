@@ -1,7 +1,11 @@
-﻿namespace Logic.Entities;
+﻿using Swashbuckle.AspNetCore.Annotations;
+
+namespace Logic.Entities;
 
 public class Entity
 {
+
+    [SwaggerSchema(ReadOnly = true)]
     public int Id { get; set; }
 
     public override bool Equals(object? obj)
