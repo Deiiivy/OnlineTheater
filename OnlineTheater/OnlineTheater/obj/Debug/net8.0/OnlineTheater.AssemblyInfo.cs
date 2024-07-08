@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnlineTheater")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7b7cee92acf1c049dd54101a0d34b5ff64316c4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e67aa6491c7650c34387dcd40561201749ca425f")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnlineTheater")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnlineTheater")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
