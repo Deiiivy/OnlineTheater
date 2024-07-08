@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GHT\\Documents\\BestPractices\\OnlineTheater\\OnlineTheater\\OnlineTheater.csproj": {}
+    "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\OnlineTheater.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GHT\\Documents\\BestPractices\\OnlineTheater\\Logic\\Logic.csproj": {
+    "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GHT\\Documents\\BestPractices\\OnlineTheater\\Logic\\Logic.csproj",
+        "projectUniqueName": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Logic.csproj",
         "projectName": "Logic",
-        "projectPath": "C:\\Users\\GHT\\Documents\\BestPractices\\OnlineTheater\\Logic\\Logic.csproj",
-        "packagesPath": "C:\\Users\\GHT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GHT\\Documents\\BestPractices\\OnlineTheater\\Logic\\obj\\",
+        "projectPath": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Logic.csproj",
+        "packagesPath": "C:\\Users\\deivy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\GHT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\deivy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -71,30 +71,40 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\GHT\\Documents\\BestPractices\\OnlineTheater\\OnlineTheater\\OnlineTheater.csproj": {
+    "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\OnlineTheater.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GHT\\Documents\\BestPractices\\OnlineTheater\\OnlineTheater\\OnlineTheater.csproj",
+        "projectUniqueName": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\OnlineTheater.csproj",
         "projectName": "OnlineTheater",
-        "projectPath": "C:\\Users\\GHT\\Documents\\BestPractices\\OnlineTheater\\OnlineTheater\\OnlineTheater.csproj",
-        "packagesPath": "C:\\Users\\GHT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GHT\\Documents\\BestPractices\\OnlineTheater\\OnlineTheater\\obj\\",
+        "projectPath": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\OnlineTheater.csproj",
+        "packagesPath": "C:\\Users\\deivy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\GHT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\deivy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,15 +112,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\GHT\\Documents\\BestPractices\\OnlineTheater\\Logic\\Logic.csproj": {
-                "projectPath": "C:\\Users\\GHT\\Documents\\BestPractices\\OnlineTheater\\Logic\\Logic.csproj"
+              "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Logic.csproj": {
+                "projectPath": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Logic.csproj"
               }
             }
           }
@@ -119,6 +128,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -159,6 +173,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -167,7 +199,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
