@@ -1,56 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\logic\\entities\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|solutionrelative:logic\\entities\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B29C9586-43C1-4E69-8898-143D991F979B}|OnlineTheater\\OnlineTheater.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\onlinetheater\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B29C9586-43C1-4E69-8898-143D991F979B}|OnlineTheater\\OnlineTheater.csproj|solutionrelative:onlinetheater\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\logic\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|solutionrelative:logic\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B29C9586-43C1-4E69-8898-143D991F979B}|OnlineTheater\\OnlineTheater.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\onlinetheater\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B29C9586-43C1-4E69-8898-143D991F979B}|OnlineTheater\\OnlineTheater.csproj|solutionrelative:onlinetheater\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\logic\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|solutionrelative:logic\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\logic\\entities\\licensingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|solutionrelative:logic\\entities\\licensingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\logic\\dal\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|solutionrelative:logic\\dal\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\logic\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|solutionrelative:logic\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\logic\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|solutionrelative:logic\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\logic\\entities\\customerstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|solutionrelative:logic\\entities\\customerstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\logic\\entities\\purchasedmovie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|solutionrelative:logic\\entities\\purchasedmovie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B29C9586-43C1-4E69-8898-143D991F979B}|OnlineTheater\\OnlineTheater.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\onlinetheater\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B29C9586-43C1-4E69-8898-143D991F979B}|OnlineTheater\\OnlineTheater.csproj|solutionrelative:onlinetheater\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -58,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,161 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\Customer.cs",
-              "RelativeDocumentMoniker": "Logic\\Entities\\Customer.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\Customer.cs",
-              "RelativeToolTip": "Logic\\Entities\\Customer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:13:26.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Model.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\DAL\\Model.cs",
-              "RelativeDocumentMoniker": "Logic\\DAL\\Model.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\DAL\\Model.cs",
-              "RelativeToolTip": "Logic\\DAL\\Model.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T23:06:20.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LicensingModel.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\LicensingModel.cs",
-              "RelativeDocumentMoniker": "Logic\\Entities\\LicensingModel.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\LicensingModel.cs",
-              "RelativeToolTip": "Logic\\Entities\\LicensingModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T23:09:15.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomerService.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Services\\CustomerService.cs",
-              "RelativeDocumentMoniker": "Logic\\Services\\CustomerService.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Services\\CustomerService.cs",
-              "RelativeToolTip": "Logic\\Services\\CustomerService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T21:54:31.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Movie.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\Movie.cs",
-              "RelativeDocumentMoniker": "Logic\\Entities\\Movie.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\Movie.cs",
-              "RelativeToolTip": "Logic\\Entities\\Movie.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T23:43:28.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CustomersController.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\Controllers\\CustomersController.cs",
-              "RelativeDocumentMoniker": "OnlineTheater\\Controllers\\CustomersController.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\Controllers\\CustomersController.cs",
-              "RelativeToolTip": "OnlineTheater\\Controllers\\CustomersController.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAD4v5AAAABTAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T12:35:08.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\Entity.cs",
-              "RelativeDocumentMoniker": "Logic\\Entities\\Entity.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\Entity.cs",
-              "RelativeToolTip": "Logic\\Entities\\Entity.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAwwAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T23:43:39.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MovieService.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Services\\MovieService.cs",
-              "RelativeDocumentMoniker": "Logic\\Services\\MovieService.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Services\\MovieService.cs",
-              "RelativeToolTip": "Logic\\Services\\MovieService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T21:54:28.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\Program.cs",
-              "RelativeDocumentMoniker": "OnlineTheater\\Program.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\Program.cs",
-              "RelativeToolTip": "OnlineTheater\\Program.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAADwvyEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T22:04:28.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CustomerStatus.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\CustomerStatus.cs",
-              "RelativeDocumentMoniker": "Logic\\Entities\\CustomerStatus.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\CustomerStatus.cs",
-              "RelativeToolTip": "Logic\\Entities\\CustomerStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:28:46.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PurchasedMovie.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\PurchasedMovie.cs",
-              "RelativeDocumentMoniker": "Logic\\Entities\\PurchasedMovie.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\PurchasedMovie.cs",
-              "RelativeToolTip": "Logic\\Entities\\PurchasedMovie.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:31:32.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\appsettings.json",
-              "RelativeDocumentMoniker": "OnlineTheater\\appsettings.json",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\appsettings.json",
-              "RelativeToolTip": "OnlineTheater\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-04T22:07:10.623Z"
             }
           ]
         }
