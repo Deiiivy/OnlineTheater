@@ -61,7 +61,26 @@ namespace OnlineTheater.Controllers
             }
         }
 
-        
+        [HttpGet("/GetAllMovies")]
+        public async Task<IActionResult> GetAllMovies()
+        {
+            try
+            {
+                var movies = await _context.Movies.ToListAsync();
+                if(movies == null)
+                {
+                    return NotFound("no hay peliculas");
+                }
+
+                return Ok(movies);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "error" + ex);
+            }
+        }
+
+
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
@@ -70,11 +89,12 @@ namespace OnlineTheater.Controllers
             if (movie == null)
             {
                 return NotFound();
-                // 
             }
 
             return Ok(movie);
         }
+
+
 
         [HttpGet("{customerId}/All")]
 
@@ -92,6 +112,7 @@ namespace OnlineTheater.Controllers
                     Description = m.Description,
                     Rating = m.Rating.ToString(), Category = m.Category.ToString(),
                     Price = _customerService.CalculatePrice(customer.Status, customer.StatusExpirationDate, m.LicensingModel),
+                    IsActive = m.IsActive,
                     LicensingModel = m.LicensingModel.ToString() })
                 .ToListAsync();
 
