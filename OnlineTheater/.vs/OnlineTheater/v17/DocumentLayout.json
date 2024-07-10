@@ -7,21 +7,6 @@
       "RelativeMoniker": "D:0:0:{B29C9586-43C1-4E69-8898-143D991F979B}|OnlineTheater\\OnlineTheater.csproj|solutionrelative:onlinetheater\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< HEAD
-=======
-      "AbsoluteMoniker": "D:0:0:{B29C9586-43C1-4E69-8898-143D991F979B}|OnlineTheater\\OnlineTheater.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\onlinetheater\\models\\moviedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B29C9586-43C1-4E69-8898-143D991F979B}|OnlineTheater\\OnlineTheater.csproj|solutionrelative:onlinetheater\\models\\moviedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\logic\\entities\\ratingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|solutionrelative:logic\\entities\\ratingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\logic\\entities\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|solutionrelative:logic\\entities\\categorymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
->>>>>>> settings
       "AbsoluteMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|c:\\users\\deivy\\downloads\\onlinetheater\\onlinetheater\\logic\\entities\\licensingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49DEDC3F-3667-4162-B96B-AABCC8BC2DC1}|Logic\\Logic.csproj|solutionrelative:logic\\entities\\licensingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -77,11 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
           "SelectedChildIndex": 6,
-=======
-          "SelectedChildIndex": 7,
->>>>>>> settings
           "Children": [
             {
               "$type": "Bookmark",
@@ -93,24 +74,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 3,
-=======
-              "DocumentIndex": 2,
-              "Title": "RatingModel.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\RatingModel.cs",
-              "RelativeDocumentMoniker": "Logic\\Entities\\RatingModel.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\RatingModel.cs",
-              "RelativeToolTip": "Logic\\Entities\\RatingModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T21:07:32.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
->>>>>>> settings
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\Customer.cs",
               "RelativeDocumentMoniker": "Logic\\Entities\\Customer.cs",
@@ -123,11 +87,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 1,
-=======
-              "DocumentIndex": 4,
->>>>>>> settings
               "Title": "LicensingModel.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\LicensingModel.cs",
               "RelativeDocumentMoniker": "Logic\\Entities\\LicensingModel.cs",
@@ -140,11 +100,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 2,
-=======
-              "DocumentIndex": 5,
->>>>>>> settings
               "Title": "Movie.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\Movie.cs",
               "RelativeDocumentMoniker": "Logic\\Entities\\Movie.cs",
@@ -157,11 +113,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 7,
-=======
-              "DocumentIndex": 10,
->>>>>>> settings
               "Title": "Entity.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\Entity.cs",
               "RelativeDocumentMoniker": "Logic\\Entities\\Entity.cs",
@@ -178,39 +130,16 @@
               "Title": "MoviesController.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\Controllers\\MoviesController.cs",
               "RelativeDocumentMoniker": "OnlineTheater\\Controllers\\MoviesController.cs",
-<<<<<<< HEAD
               "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\Controllers\\MoviesController.cs",
               "RelativeToolTip": "OnlineTheater\\Controllers\\MoviesController.cs",
               "ViewState": "AQIAAKMAAAAAAAAAAAAAALsAAAAAAAAA",
-=======
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\Controllers\\MoviesController.cs*",
-              "RelativeToolTip": "OnlineTheater\\Controllers\\MoviesController.cs*",
-              "ViewState": "AQIAAJEAAAAAAAAAAAAcwKMAAAAdAAAA",
->>>>>>> settings
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-09T19:21:24.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 4,
-=======
-              "DocumentIndex": 1,
-              "Title": "MovieDTO.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\Models\\MovieDTO.cs",
-              "RelativeDocumentMoniker": "OnlineTheater\\Models\\MovieDTO.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\Models\\MovieDTO.cs",
-              "RelativeToolTip": "OnlineTheater\\Models\\MovieDTO.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAQwAwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T20:09:14.608Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
->>>>>>> settings
               "Title": "CustomerStatus.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\CustomerStatus.cs",
               "RelativeDocumentMoniker": "Logic\\Entities\\CustomerStatus.cs",
@@ -223,11 +152,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 5,
-=======
-              "DocumentIndex": 8,
->>>>>>> settings
               "Title": "CustomerService.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Services\\CustomerService.cs",
               "RelativeDocumentMoniker": "Logic\\Services\\CustomerService.cs",
@@ -240,11 +165,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 8,
-=======
-              "DocumentIndex": 11,
->>>>>>> settings
               "Title": "Model.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\DAL\\Model.cs",
               "RelativeDocumentMoniker": "Logic\\DAL\\Model.cs",
@@ -257,24 +178,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 6,
-=======
-              "DocumentIndex": 3,
-              "Title": "CategoryModel.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\CategoryModel.cs",
-              "RelativeDocumentMoniker": "Logic\\Entities\\CategoryModel.cs",
-              "ToolTip": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\CategoryModel.cs",
-              "RelativeToolTip": "Logic\\Entities\\CategoryModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T21:06:26.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
->>>>>>> settings
               "Title": "PurchasedMovie.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Entities\\PurchasedMovie.cs",
               "RelativeDocumentMoniker": "Logic\\Entities\\PurchasedMovie.cs",
@@ -287,11 +191,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 10,
-=======
-              "DocumentIndex": 13,
->>>>>>> settings
               "Title": "20240704142949_Initial.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Migrations\\20240704142949_Initial.cs",
               "RelativeDocumentMoniker": "Logic\\Migrations\\20240704142949_Initial.cs",
@@ -304,11 +204,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 9,
-=======
-              "DocumentIndex": 12,
->>>>>>> settings
               "Title": "MovieService.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\Logic\\Services\\MovieService.cs",
               "RelativeDocumentMoniker": "Logic\\Services\\MovieService.cs",
@@ -321,11 +217,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 11,
-=======
-              "DocumentIndex": 14,
->>>>>>> settings
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\Program.cs",
               "RelativeDocumentMoniker": "OnlineTheater\\Program.cs",
@@ -338,11 +230,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 12,
-=======
-              "DocumentIndex": 15,
->>>>>>> settings
               "Title": "CustomersController.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\Downloads\\OnlineTheater\\OnlineTheater\\OnlineTheater\\Controllers\\CustomersController.cs",
               "RelativeDocumentMoniker": "OnlineTheater\\Controllers\\CustomersController.cs",
