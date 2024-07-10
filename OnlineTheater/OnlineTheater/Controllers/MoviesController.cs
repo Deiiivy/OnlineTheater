@@ -161,7 +161,7 @@ namespace OnlineTheater.Controllers
             movie.IsActive = true;
             await _context.SaveChangesAsync();
 
-            return Ok(new { message = $"pelicula con id {id} activada" });
+            return Ok(movie);
 
         }
 
