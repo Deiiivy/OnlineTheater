@@ -363,5 +363,7 @@ MigrationBackup/
 FodyWeavers.xsd
 .idea/
 **/obj/
+OnlineTheater/.vs/
+OnlineTheater/OnlineTheater/bin/
 
 ./runtimes
