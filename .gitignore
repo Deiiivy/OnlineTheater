@@ -366,4 +366,7 @@ FodyWeavers.xsd
 OnlineTheater/.vs/
 OnlineTheater/OnlineTheater/bin/
 
+*.dll
+*.pdb
+
 ./runtimes
