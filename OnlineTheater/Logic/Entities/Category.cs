@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Logic.Entities
 {
-    public enum RatingModel
+    public enum Category
     {
-        G = 1,
-        PG = 2,
-        PG13 = 3,
-        R = 4,
+        Action = 1,
+        Comedy = 2,
+        Drama = 3,
+        Horror = 4,
     }
 }

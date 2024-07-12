@@ -13,6 +13,7 @@ public class Model : DbContext
     public DbSet<Customer> Customers { get; set; } 
     public DbSet<Movie> Movies { get; set; } 
     public DbSet<PurchasedMovie> PurchasedMovies { get; set; }
+    public DbSet<RatingMovie> RatingMovies { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

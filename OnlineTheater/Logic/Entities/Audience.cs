@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Logic.Entities
 {
-    public enum CategoryModel
+    public enum Audience
     {
-        Action = 1,
-        Comedy = 2,
-        Drama = 3,
-        Horror = 4,
+        G = 1,
+        PG = 2,
+        PG13 = 3,
+        R = 4,
+        NC17 = 5,
     }
 }

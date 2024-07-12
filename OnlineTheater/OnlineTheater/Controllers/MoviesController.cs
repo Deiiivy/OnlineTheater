@@ -16,19 +16,21 @@ namespace OnlineTheater.Controllers
     {
         private readonly Model _context;
         private readonly CustomerService _customerService;
+        private readonly MovieService _movieService;
 
 
-        public MoviesController(Model context, CustomerService customerService)
+        public MoviesController(Model context, CustomerService customerService, MovieService movieService)
         {
             _context = context;
             _customerService = customerService;
+            _movieService = movieService;
         }
 
         // metodo para obtener solo las movies activas
 
 
 
-        [HttpGet("/AllMoviesActives")]
+        [HttpGet("/AllActiveMovies")]
         public async Task<IActionResult> getMoviesActive()
         {
             try
@@ -174,7 +176,8 @@ namespace OnlineTheater.Controllers
             {
                 return NotFound($"pelicula con id: {id} no encontrada");
             }
-            else if (movie.IsActive)
+
+            if (movie.IsActive)
             {
                 return BadRequest($"pelicula con id {id} ya esta activada");
             }
@@ -202,7 +205,33 @@ namespace OnlineTheater.Controllers
             return Ok(new { message = $"pelicula con id {id} inactivada" });
         }
 
+        [HttpPost("{id}/RatingMovie")]
+        public IActionResult RateMovie(int id, int rating, int customerId)
+        {
+            try
+            {
+                var movie = _context.Movies.Find(id);
+                var customer = _context.Customers.Find(customerId);
+
+                if (movie == null)
+                    return NotFound("pelicula no encontrada");
+
+                if (customer == null)
+                    return NotFound("cliente no encontrada");
+
+                if (rating < 1 || rating > 5)
+                    return BadRequest("calificacion fuera del rango (1-5)");
+
+                var ratingMovie = _movieService.RatingMovie(customer, movie, rating);
+
+                return Ok("pelicula calificada exitoxamente");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"error: {ex.Message}");
+            }
+        }
+
 
     }
 }
-

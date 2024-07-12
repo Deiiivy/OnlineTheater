@@ -124,7 +124,52 @@ namespace Logic.Migrations
                     b.ToTable("PurchasedMovies");
                 });
 
+            modelBuilder.Entity("Logic.Entities.RatingMovie", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CustomerId");
+
+                    b.HasIndex("MovieId");
+
+                    b.ToTable("RatingMovies");
+                });
+
             modelBuilder.Entity("Logic.Entities.PurchasedMovie", b =>
+                {
+                    b.HasOne("Logic.Entities.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Logic.Entities.Movie", "Movie")
+                        .WithMany()
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("Movie");
+                });
+
+            modelBuilder.Entity("Logic.Entities.RatingMovie", b =>
                 {
                     b.HasOne("Logic.Entities.Customer", "Customer")
                         .WithMany()
