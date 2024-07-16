@@ -68,8 +68,20 @@ namespace OnlineTheater.Controllers
         {
             try
             {
-                var movies = await _context.Movies.ToListAsync();
-                if(movies == null)
+                var movies = await _context.Movies
+                    .Select(m => new MovieDTO
+                    {
+                        Name = m.Name,
+                        Description = m.Description,
+                        Rating = m.Rating.ToString(),
+                        Category = m.Category.ToString(),
+                        IsActive = m.IsActive,
+                        LicensingModel = m.LicensingModel.ToString(),
+                        AverageRating = _movieService.AverageRatingMovie(m.Id)
+                    })
+                    .ToListAsync();
+
+                if (movies == null || !movies.Any())
                 {
                     return NotFound("no hay peliculas");
                 }
@@ -78,23 +90,37 @@ namespace OnlineTheater.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "error" + ex);
+                return StatusCode(500, "error" + ex.Message);
             }
         }
+
 
 
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> GetMovie(int id)
         {
             var movie = await _context.Movies.FindAsync(id);
             if (movie == null)
             {
-                return NotFound();
+                return NotFound("movie not found");
             }
 
-            return Ok(movie);
+            var averageRating = _movieService.AverageRatingMovie(id);
+            var movieDto = new MovieDTO
+            {
+                Name = movie.Name,
+                Description = movie.Description,
+                Rating = movie.Rating.ToString(),
+                Category = movie.Category.ToString(),
+                IsActive = movie.IsActive,
+                LicensingModel = movie.LicensingModel.ToString(),
+                AverageRating = averageRating
+            };
+
+            return Ok(movieDto);
         }
+
 
 
 
@@ -109,14 +135,18 @@ namespace OnlineTheater.Controllers
             }
 
             var movies = await _context.Movies
-                .Select(m =>  new MovieDTO { 
-                    Name = m.Name,
-                    Description = m.Description,
-                    Rating = m.Rating.ToString(), Category = m.Category.ToString(),
-                    Price = _customerService.CalculatePrice(customer.Status, customer.StatusExpirationDate, m.LicensingModel),
-                    IsActive = m.IsActive,
-                    LicensingModel = m.LicensingModel.ToString() })
-                .ToListAsync();
+     .Select(m => new MovieDTO
+     {
+         Name = m.Name,
+         Description = m.Description,
+         Rating = m.Rating.ToString(),
+         Category = m.Category.ToString(),
+         Price = _customerService.CalculatePrice(customer.Status, customer.StatusExpirationDate, m.LicensingModel),
+         IsActive = m.IsActive,
+         LicensingModel = m.LicensingModel.ToString(),
+         AverageRating = _movieService.AverageRatingMovie(m.Id)
+     })
+     .ToListAsync();
 
             return Ok(movies);
         }
@@ -184,6 +214,19 @@ namespace OnlineTheater.Controllers
 
             movie.IsActive = true;
             await _context.SaveChangesAsync();
+
+            var averageRating = _movieService.AverageRatingMovie(id);
+
+            var movieDto = new MovieDTO
+            {
+                Name = movie.Name,
+                Description = movie.Description,
+                Rating = movie.Rating.ToString(),
+                Category = movie.Category.ToString(),
+                IsActive = movie.IsActive,
+                LicensingModel = movie.LicensingModel.ToString(),
+                AverageRating = averageRating
+            };
 
             return Ok(movie);
 
