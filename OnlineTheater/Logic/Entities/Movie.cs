@@ -8,4 +8,5 @@ public class Movie : Entity
     public LicensingModel LicensingModel { get; set; }
     public Category Category { get; set; }
     public Audience Audience { get; set; }
+    public ICollection<RatingMovie> RatingMovie { get;} = new List<RatingMovie>();
 }

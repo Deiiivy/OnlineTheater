@@ -73,7 +73,8 @@ namespace OnlineTheater.Controllers
                         Category = m.Category.ToString(),
                         IsActive = m.IsActive,
                         LicensingModel = m.LicensingModel.ToString(),
-                        AverageRating = _movieService.AverageRatingMovie(m.Id)
+                        AverageRating = m.RatingMovie.Any() ? m.RatingMovie.Average(rm => rm.Rating) : 0
+
                     })
                     .ToListAsync();
 
@@ -101,8 +102,6 @@ namespace OnlineTheater.Controllers
             {
                 return NotFound("movie not found");
             }
-
-            var averageRating = _movieService.AverageRatingMovie(id);
             var movieDto = new MovieDTO
             {
                 Name = movie.Name,
@@ -111,7 +110,7 @@ namespace OnlineTheater.Controllers
                 Category = movie.Category.ToString(),
                 IsActive = movie.IsActive,
                 LicensingModel = movie.LicensingModel.ToString(),
-                AverageRating = averageRating
+                AverageRating = movie.RatingMovie.Any() ? movie.RatingMovie.Average(m => m.Rating) : 0
             };
 
             return Ok(movieDto);
@@ -140,7 +139,7 @@ namespace OnlineTheater.Controllers
          Price = _customerService.CalculatePrice(customer.Status, customer.StatusExpirationDate, m.LicensingModel),
          IsActive = m.IsActive,
          LicensingModel = m.LicensingModel.ToString(),
-         AverageRating = _movieService.AverageRatingMovie(m.Id)
+         AverageRating = m.RatingMovie.Any() ? m.RatingMovie.Average(rm => rm.Rating): 0
      })
      .ToListAsync();
 
@@ -162,9 +161,9 @@ namespace OnlineTheater.Controllers
                     Name = movieDto.Name,
                     Description = movieDto.Description,
                     IsActive = movieDto.IsActive,
-                    LicensingModel = Enum.TryParse<LicensingModel>(movieDto.LicensingModel, out var licensingModelEnum) ? licensingModelEnum : Enum.Parse<LicensingModel>(movieDto.LicensingModel),
-                    Category = Enum.TryParse<Category>(movieDto.Category, out var categoryEnum) ? categoryEnum : Enum.Parse<Category>(movieDto.Category),
-                    Audience = Enum.TryParse<Audience>(movieDto.Rating, out var audienceEnum) ? audienceEnum : Enum.Parse<Audience>(movieDto.Rating)
+                    LicensingModel = (LicensingModel)Enum.Parse(typeof(LicensingModel), movieDto.LicensingModel),
+                    Category = (Category)Enum.Parse(typeof(Category), movieDto.Category),
+                    Audience = (Audience)Enum.Parse(typeof(Audience), movieDto.Rating)
                 };
 
                 _context.Movies.Add(movie);
@@ -180,7 +179,7 @@ namespace OnlineTheater.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, Movie Movie)
+        public async Task<IActionResult> Update(int id, [FromBody] MovieDTO movieDto)
         {
             if (!ModelState.IsValid)
             {
@@ -190,20 +189,23 @@ namespace OnlineTheater.Controllers
             var movie = await _context.Movies.FindAsync(id);
             if (movie == null)
             {
-                return NotFound();   
+                return NotFound();
             }
 
-            movie.Name = Movie.Name;
-            movie.Description = Movie.Description;
-            movie.Audience = Movie.Audience;
-            movie.Category = Movie.Category;
-            movie.IsActive = Movie.IsActive; 
-            movie.LicensingModel = Movie.LicensingModel;
+            movie.Name = movieDto.Name;
+            movie.Description = movieDto.Description;
+            movie.Audience = (Audience)Enum.Parse(typeof(Audience), movieDto.Rating);
+            movie.Category = (Category)Enum.Parse(typeof(Category), movieDto.Category);
+            movie.IsActive = movieDto.IsActive;
+            movie.LicensingModel = (LicensingModel)Enum.Parse(typeof(LicensingModel), movieDto.LicensingModel);
 
             await _context.SaveChangesAsync();
 
             return Ok();
         }
+
+
+
 
         [HttpPatch("{id}/activate")]
         public async Task<IActionResult> Activate(int id)
@@ -222,7 +224,7 @@ namespace OnlineTheater.Controllers
             movie.IsActive = true;
             await _context.SaveChangesAsync();
 
-            var averageRating = _movieService.AverageRatingMovie(id);
+          
 
             var movieDto = new MovieDTO
             {
@@ -232,7 +234,7 @@ namespace OnlineTheater.Controllers
                 Category = movie.Category.ToString(),
                 IsActive = movie.IsActive,
                 LicensingModel = movie.LicensingModel.ToString(),
-                AverageRating = averageRating
+                AverageRating = movie.RatingMovie.Any() ? movie.RatingMovie.Average(m => m.Rating) : 0
             };
 
             return Ok(movie);

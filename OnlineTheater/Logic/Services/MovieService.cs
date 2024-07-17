@@ -43,12 +43,12 @@ namespace Logic.Services
 
       
 
-        public double AverageRatingMovie(int movieId)
-        {
-            return _context.RatingMovies
-                .Where(rm => rm.Movie.Id == movieId)
-                .Average(rm => rm.Rating);
-        }
+        //public double AverageRatingMovie(int movieId)
+        //{
+        //    return _context.RatingMovies
+        //        .Where(rm => rm.Movie.Id == movieId)
+        //        .Average(rm => rm.Rating);
+        //}
 
 
     }
