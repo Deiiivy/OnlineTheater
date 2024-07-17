@@ -43,30 +43,6 @@ namespace Logic.Services
 
       
 
-        public RatingMovie RatingMovie(Customer customer, Movie movie, int rating)
-        {
-            if (rating < 1 || rating > 5)
-                throw new ArgumentOutOfRangeException(nameof(rating), "calificacion fuera del rango de 1 a 5");
-
-            var existingRating = _context.RatingMovies
-                .FirstOrDefault(rm => rm.Movie.Id == movie.Id && rm.Customer.Id == customer.Id);
-
-            if (existingRating != null)
-                throw new InvalidOperationException("el cliente ya califico esta movie");
-
-            var ratingMovie = new RatingMovie
-            {
-                Customer = customer,
-                Movie = movie,
-                Rating = rating
-            };
-
-            _context.RatingMovies.Add(ratingMovie);
-            _context.SaveChanges();
-
-            return ratingMovie;
-        }
-
         public double AverageRatingMovie(int movieId)
         {
             return _context.RatingMovies

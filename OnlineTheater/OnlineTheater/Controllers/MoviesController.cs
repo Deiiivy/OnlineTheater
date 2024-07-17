@@ -26,10 +26,6 @@ namespace OnlineTheater.Controllers
             _movieService = movieService;
         }
 
-        // metodo para obtener solo las movies activas
-
-
-
         [HttpGet("/AllActiveMovies")]
         public async Task<IActionResult> getMoviesActive()
         {
@@ -41,7 +37,7 @@ namespace OnlineTheater.Controllers
         {
             Name = m.Name,
             Description = m.Description,
-            Rating = m.Rating.ToString(),
+            Rating = m.Audience.ToString(),
             Category = m.Category.ToString(),
             IsActive = m.IsActive,
             LicensingModel = m.LicensingModel.ToString()
@@ -73,7 +69,7 @@ namespace OnlineTheater.Controllers
                     {
                         Name = m.Name,
                         Description = m.Description,
-                        Rating = m.Rating.ToString(),
+                        Rating = m.Audience.ToString(),
                         Category = m.Category.ToString(),
                         IsActive = m.IsActive,
                         LicensingModel = m.LicensingModel.ToString(),
@@ -111,7 +107,7 @@ namespace OnlineTheater.Controllers
             {
                 Name = movie.Name,
                 Description = movie.Description,
-                Rating = movie.Rating.ToString(),
+                Rating = movie.Audience.ToString(),
                 Category = movie.Category.ToString(),
                 IsActive = movie.IsActive,
                 LicensingModel = movie.LicensingModel.ToString(),
@@ -139,7 +135,7 @@ namespace OnlineTheater.Controllers
      {
          Name = m.Name,
          Description = m.Description,
-         Rating = m.Rating.ToString(),
+         Rating = m.Audience.ToString(),
          Category = m.Category.ToString(),
          Price = _customerService.CalculatePrice(customer.Status, customer.StatusExpirationDate, m.LicensingModel),
          IsActive = m.IsActive,
@@ -152,7 +148,7 @@ namespace OnlineTheater.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Movie movie)
+        public async Task<IActionResult> Create([FromBody] MovieDTO movieDto)
         {
             try
             {
@@ -161,6 +157,16 @@ namespace OnlineTheater.Controllers
                     return BadRequest(ModelState);
                 }
 
+                var movie = new Movie
+                {
+                    Name = movieDto.Name,
+                    Description = movieDto.Description,
+                    IsActive = movieDto.IsActive,
+                    LicensingModel = Enum.TryParse<LicensingModel>(movieDto.LicensingModel, out var licensingModelEnum) ? licensingModelEnum : Enum.Parse<LicensingModel>(movieDto.LicensingModel),
+                    Category = Enum.TryParse<Category>(movieDto.Category, out var categoryEnum) ? categoryEnum : Enum.Parse<Category>(movieDto.Category),
+                    Audience = Enum.TryParse<Audience>(movieDto.Rating, out var audienceEnum) ? audienceEnum : Enum.Parse<Audience>(movieDto.Rating)
+                };
+
                 _context.Movies.Add(movie);
                 await _context.SaveChangesAsync();
 
@@ -168,9 +174,10 @@ namespace OnlineTheater.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "error al crear película: " + ex.Message);
+                return StatusCode(500, "Error al crear película: " + ex.Message);
             }
         }
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Movie Movie)
@@ -188,7 +195,7 @@ namespace OnlineTheater.Controllers
 
             movie.Name = Movie.Name;
             movie.Description = Movie.Description;
-            movie.Rating = Movie.Rating;
+            movie.Audience = Movie.Audience;
             movie.Category = Movie.Category;
             movie.IsActive = Movie.IsActive; 
             movie.LicensingModel = Movie.LicensingModel;
@@ -221,7 +228,7 @@ namespace OnlineTheater.Controllers
             {
                 Name = movie.Name,
                 Description = movie.Description,
-                Rating = movie.Rating.ToString(),
+                Rating = movie.Audience.ToString(),
                 Category = movie.Category.ToString(),
                 IsActive = movie.IsActive,
                 LicensingModel = movie.LicensingModel.ToString(),
@@ -265,8 +272,17 @@ namespace OnlineTheater.Controllers
                 if (rating < 1 || rating > 5)
                     return BadRequest("calificacion fuera del rango (1-5)");
 
-                var ratingMovie = _movieService.RatingMovie(customer, movie, rating);
+                var ratingMovie = new RatingMovie
+                {
+                    Customer = customer,
+                    Movie = movie,
+                    Rating = rating
+                };
 
+                _context.RatingMovies.Add(ratingMovie);
+                _context.SaveChanges();
+
+             
                 return Ok("pelicula calificada exitoxamente");
             }
             catch (Exception ex)

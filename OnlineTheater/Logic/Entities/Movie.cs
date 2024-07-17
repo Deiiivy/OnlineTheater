@@ -7,5 +7,5 @@ public class Movie : Entity
     public bool IsActive { get; set; } = true;
     public LicensingModel LicensingModel { get; set; }
     public Category Category { get; set; }
-    public Audience Rating { get; set; }
+    public Audience Audience { get; set; }
 }
